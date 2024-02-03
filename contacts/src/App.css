@@ -1,0 +1,233 @@
+/* ContactNavbar.css */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #fffbed;
+}
+.navbar {
+  background-color:#333332;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: #ffd700; /* Change the color on hover to your preferred color */
+}
+/* styles.css */
+
+/* Your existing CSS */
+
+.con {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.save-contacts-container {
+  width: 30%; /* Increased width */
+  padding: 30px; /* Increased padding */
+  background-color: #fff3e2;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+}
+.save-contacts-container h2{
+  background-color: white;
+  width: 40%;
+ 
+    padding: 10px;
+    margin-left: -33px;
+    border-radius: 20px;
+    padding-left: 35px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    letter-spacing: 5px;
+    font-size: 17px;
+    box-shadow:   0 0 4px rgba(0, 0, 0, 0.1); ;
+}
+
+.save-contacts-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: px; Increased padding */
+ 
+}
+
+/* Your existing CSS */
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+  margin-top: 16px;
+  margin-left: 5px;
+  letter-spacing: 3px;
+
+}
+/* Your existing styles for input */
+/* Your existing styles for input */
+/* Your existing styles for input */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.7s ease;
+  letter-spacing: 3px;
+}
+
+/* Add the following CSS for a subtle bubbly effect on click */
+input:focus {
+  animation: bubble 0.7s ease;
+  border-color: #4285f4; /* Adjust border color on focus */
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+button {
+  padding: 12px;
+  background-color: #1c1c1b;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 50%;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Added transform for clicking effect */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.95); /* Reduce the size slightly when clicked */
+}
+/* styles.css */
+
+/* styles.css */
+     
+/* Style for the Contactlist component */
+/* Add this CSS to your stylesheet */
+.contact-list-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-email {
+  color: #555;
+}
+
+.bt {
+  background-color: #272727; /* Alizarin color */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.bt:hover {
+  background-color: #ea4533; /* Slightly darker shade on hover */
+}
+
+/* Add an icon for the delete button */
+.bt::before {
+  content: '\2715'; /* Unicode multiplication symbol (X) */
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.contact-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-entry {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-entry div {
+    margin-bottom: 10px;
+  }
+
+  .bt {
+    margin-top: 10px;
+  }
+}
